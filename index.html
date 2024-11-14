@@ -24,6 +24,15 @@
     .container {
       width: 80%;
       margin: 0 auto;
+      max-width: fit-content;
+      text-align: center;
+    }
+
+    .container img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
     }
 
     /* Header styles */
@@ -136,49 +145,130 @@
     footer a:hover {
       color: #fff;
     }
+
+    /* Responsive adjustments for screens smaller than 768px */
+    @media (max-width: 768px) {
+      /* Header */
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      /* Navigation */
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      nav ul li a {
+        font-size: 1rem;
+      }
+
+      /* Section heading and text */
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      /* Projects */
+      .project-list {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .project {
+        width: 100%;
+      }
+
+      /* Footer */
+      footer p {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Responsive adjustments for screens smaller than 480px */
+    @media (max-width: 480px) {
+      /* Header */
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      /* Navigation */
+      nav ul li a {
+        font-size: 0.9rem;
+      }
+
+      /* Section heading and text */
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      /* Footer */
+      footer p {
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="container">
-      <h1>John Doe</h1>
-      <p>Web Developer | Designer</p>
+      <h1>Karlis Sprogis</h1>
+      <p>full-time gambler</p>
     </div>
   </header>
 
   <nav>
     <div class="container">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">Par</a></li>
+        <li><a href="#projects">Projekti</a></li>
+        <li><a href="#contact">Sazina</a></li>
       </ul>
     </div>
   </nav>
 
   <section id="about" class="section">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I'm a passionate web developer with a keen eye for design. I specialize in creating clean, responsive websites using modern web technologies. My goal is to build visually appealing, user-friendly websites that provide great user experiences.</p>
+      <h2>Par mani</h2>
+      <p>macos VTDT un man patik James Charles</p>
+      <img src="images.jpg" alt="About Image">
     </div>
   </section>
 
   <section id="projects" class="section">
     <div class="container">
-      <h2>My Projects</h2>
+      <h2>Mani Projekti</h2>
       <div class="project-list">
         <div class="project">
-          <h3>Project 1</h3>
-          <p>A brief description of the project goes here. It's a web application designed to do something amazing.</p>
+          <h3>Projekts 1</h3>
+          <p>Es izveidoju sizofrenijas zalu atgadinataju - noderigs riks prieks tiem, kurus ietekme sizofrenija, un kuri aizmirst izdzert zales. Ar paris klikskiem uzliec sev tadu atgadinataju, kuru nespesi nedzirdet! Papildus pieejama ir datu baze, kur redzesiet visus datumus - kad, ko esiet dzeris..</p>
+          <img src="zales.png" alt="Project 1 Image">
         </div>
         <div class="project">
-          <h3>Project 2</h3>
-          <p>This project is a responsive website that adapts to various screen sizes, with interactive elements built using JavaScript.</p>
+          <h3>Projekts 2</h3>
+          <p>Es izveidoju kalkulatoru, kur tu ievadi savu naudas daudzumu, un tev pateiks cik daudz un kads alkohols tev sanak!</p>
+          <img src="alko.avif" alt="Project 2 Image">
         </div>
         <div class="project">
-          <h3>Project 3</h3>
-          <p>Another project description goes here, detailing your work on an innovative and creative solution.</p>
+          <h3>Projekts 3</h3>
+          <p>Es izveidoju valentindienas darbu, kur ar radosam JavaScript funkcijam panacu interesantas animacijas. <br> The perfect tool to ask that special person out. 😏</p>
+          <img src="milestiba.webp" alt="Project 3 Image">
         </div>
       </div>
     </div>
@@ -186,15 +276,15 @@
 
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you'd like to collaborate or just want to say hello, feel free to reach out!</p>
-      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <h2>Sazinies ar mani</h2>
+      <p>ja velies sazinaties ar mani, dod zinu!</p>
+      <p>Email: <a href="mailto:tuncis.tuncis@gmail.com">tuncis.tuncis@gmail.com</a></p>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2024 John Doe | All Rights Reserved</p>
+      <p>&copy; 2024 Karlis Sprogis | All Rights Reserved</p>
     </div>
   </footer>
 
