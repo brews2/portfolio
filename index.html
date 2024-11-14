@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Container for consistent layout */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    /* Header styles */
+    header {
+      background: #111;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #ccc;
+    }
+
+    /* Navigation styles */
+    nav {
+      background: #222;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #bbb;
+    }
+
+    /* Section styles */
+    .section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .project-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .project {
+      width: 30%;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #111;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      color: #777;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>John Doe</h1>
+      <p>Web Developer | Designer</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate web developer with a keen eye for design. I specialize in creating clean, responsive websites using modern web technologies. My goal is to build visually appealing, user-friendly websites that provide great user experiences.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>A brief description of the project goes here. It's a web application designed to do something amazing.</p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>This project is a responsive website that adapts to various screen sizes, with interactive elements built using JavaScript.</p>
+        </div>
+        <div class="project">
+          <h3>Project 3</h3>
+          <p>Another project description goes here, detailing your work on an innovative and creative solution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to collaborate or just want to say hello, feel free to reach out!</p>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 John Doe | All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
